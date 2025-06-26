@@ -15,6 +15,7 @@
             <a-img id="mercury" src="textures/2k_mercury.jpg"></a-img>
             <a-img id="venus" src="textures/2k_venus_atmosphere.jpg"></a-img>
             <a-img id="earth" src="textures/2k_earth.jpg"></a-img>
+            <a-img id="moon" src="textures/2k_moon.jpg"></a-img>
             <a-img id="mars" src="textures/2k_mars.jpg"></a-img>
             <a-img id="jupiter" src="textures/2k_jupiter.jpg"></a-img>
             <a-img id="saturn" src="textures/2k_saturn.jpg"></a-img>
@@ -23,21 +24,21 @@
             <a-img id="neptune" src="textures/2k_neptune.jpg"></a-img>
         </a-assets>
 
-        <a-entity id="cameraRig" position="100 1.6 200">
+        <a-entity id="cameraRig" position="100 1.6 600">
             <a-entity camera look-controls wasd-controls="acceleration: 600"></a-entity>
         </a-entity>
 
         <a-sky src="#stars" radius="1000"></a-sky>
-        <a-sphere src="#sun" radius="100" position="0 -20 0" segments-height="100"></a-sphere>
-        <a-sphere src="#mercury" radius="5" position="170 -20 0" segments-height="100"></a-sphere>
-        <a-sphere src="#venus" radius="10" position="200 -20 0" segments-height="100"></a-sphere>
-        <a-sphere src="#earth" radius="20" position="260 -20 0" segments-height="100"></a-sphere>
-        <a-sphere src="#mars" radius="15" position="315 -20 0" segments-height="100"></a-sphere>
-        <a-sphere src="#jupiter" radius="40" position="500 -20 0" segments-height="100"></a-sphere>
-        <a-sphere src="#saturn" radius="30" position="620 -20 0" segments-height="100"></a-sphere>
-        <a-torus src="#saturn_ring" radius="3" scale="15 15 1" position="620 -20 0" rotation="90 0 0" segments-radial="100" segments-tubular="100"></a-torus>
-        <a-sphere src="#uranus" radius="25" position="720 -20 0" segments-height="100"></a-sphere>
-        <a-sphere src="#neptune" radius="24" position="800 -20 0" segments-height="100"></a-sphere>
+        <a-sphere src="#sun" radius="100" position="0 -20 0" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dur: 70000; easing: linear;"></a-sphere>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 12500; easing: linear"><a-sphere src="#mercury" radius="5" position="-85.82 -20 146.74" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dur: 75000; easing: linear;"></a-sphere></a-entity>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 25000; easing: linear"><a-sphere src="#venus" radius="10" position="-84.18 -20 -178.21" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dir: reverse; dur: 90000; easing: linear;"></a-sphere></a-entity>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 50000; easing: linear"><a-sphere src="#earth" radius="20" position="37.22 -20 267.44" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dur: 50000; easing: linear;"><a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear"><a-sphere src="#moon" radius="2" position="25 0 0" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dur: 65000; easing: linear;"></a-sphere></a-entity></a-sphere></a-entity>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 70000; easing: linear"><a-sphere src="#mars" radius="15" position="-244.61 -20 122.74" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dur: 60000; easing: linear;"></a-sphere></a-entity>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 100000; easing: linear"><a-sphere src="#jupiter" radius="40" position="397.16 -20 -281.91" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000; easing: linear;"></a-sphere></a-entity></a-entity>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 150000; easing: linear"><a-sphere src="#saturn" radius="30" position="458.91 -20 413.47" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dur: 25000; easing: linear;"></a-sphere></a-entity>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 150000; easing: linear"><a-torus src="#saturn_ring" radius="3" scale="15 15 1" position="458.91 -20 413.47" rotation="90 0 0" segments-radial="100" segments-tubular="100"></a-torus></a-entity>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 300000; easing: linear"><a-sphere src="#uranus" radius="25" position="-139.36 -20 -702.84" segments-height="100" animation="property: rotation; to: 360 0 0; loop: true; dur: 35000; easing: linear;"></a-sphere></a-entity>
+        <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 600000; easing: linear"><a-sphere src="#neptune" radius="24" position="740.14 -20 -263.77" segments-height="100" animation="property: rotation; to: 0 360 0; loop: true; dur: 32000; easing: linear;"></a-sphere></a-entity>
     </a-scene>
 </body>
 </html>
