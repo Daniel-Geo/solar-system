@@ -5,9 +5,11 @@ This website offers a realistic representation of the solar system with a starry
 - Mercury
 - Venus
 - Earth
+- Moon
 - Mars
 - Jupiter
 - Saturn
+- Saturn's rings
 - Uranus
 - Neptune
 - A 360° sky sphere surrounding the solar system
