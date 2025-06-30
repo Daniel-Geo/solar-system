@@ -7,6 +7,7 @@ This website offers a realistic representation of the solar system with a starry
 - Earth
 - Moon
 - Mars
+- Asteroid belt
 - Jupiter
 - Saturn
 - Saturn's rings
